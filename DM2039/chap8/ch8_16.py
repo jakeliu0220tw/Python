@@ -1,0 +1,25 @@
+# demo of zip()
+fields = ['name', 'age', 'city']
+data = ['jake', 42, 'taoyuan']
+zip_data = zip(fields, data)
+print(type(zip_data))
+user_data = list(zip_data)
+print(f"list of zip_data = {user_data}")
+
+# demo of unzip()
+f, v = zip(*user_data)
+print(f"f = {f}")
+print(f"v = {v}")
+
+# demo of zip()
+groups = ('g1', 'g2', 'g3')
+team1 = ('jake', 'eva', 'dezember')
+team2 = ('kevin', 'athena', 'bob')
+zip_data = zip(groups, team1, team2)
+print(type(zip_data))
+groups_data = list(zip_data)
+print(f"groups_data = {groups_data}")
+g, t1, t2 = zip(*groups_data)
+print(f"g = {g}")
+print(f"t1 = {t1}")
+print(f"t2 = {t2}")
