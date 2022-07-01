@@ -62,4 +62,5 @@ async def send_notification(email: str, background_tasks: BackgroundTasks):
     return {"message": "Notification sent in the background"}
 
 if __name__ == "__main__":
+   # setup logger with config file
    uvicorn.run(app, host="0.0.0.0", port=8000, log_config="log_config.json")
